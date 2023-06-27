@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Recursive:wght@300&family=Ysabeau+SC:wght@1&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('../public/ghost2.jpg');
+  background-size: cover;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+.heading{
+  background-image: url('../public/headingback.jpg');
+  background-size: cover;
+  color: #9BABB8;
+  height: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.heading h1{
+  
+  animation: headanime 1s ease-in infinite 1s alternate-reverse;
+  
+}
+
+@keyframes headanime {
+  0%{
+  transform: rotate(10deg);    
+  }
+  100%{
+    transform: rotate(-10deg);    
+
+  }
+  
+}
+
+.navigation{
+  margin-top: 32px;
+  width: 80%;
+  margin-left: 100px;
+  height: 30px;
+  padding: 6px;
+}
+
+.navigation nav ul li{
+  
+  display: inline-block;
+  margin-left: 83px;
+}
+
+.navigation nav ul li a{
+  text-decoration: none;
+  font-weight:600 ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  animation: navanime 2ms ease-in 1s infinite alternate-reverse;
+}
+
+.navigation nav ul li a:hover{
+  color: greenyellow;
+  text-decoration: rgb(255, 0, 0) underline;
+  font-size: 20px;
+}
+
+@keyframes navanime {
+
+  0%{
+    
+    transform: translate(1px,1px);
+  }
+  100%{
+    transform: translate(-1px,-1px);
+
+  }
+  
+}
+.contentwrite {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.contentwrite > *{
+  width: 100%;
+}
+
+.showdata{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border: 0.5px solid white;
+  height: 30px;
+  padding:6px;
+  margin-left: 150px;
+  margin-top: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  animation: showdataanime 1ms ease-in infinite alternate-reverse;
+}
+
+@keyframes showdataanime {
+
+  0%{
+    transform: rotate(0.5deg);
+    color: red;
+
+  }
+
+  100%{
+    transform: rotate(0.5deg);
+    border: 0.5px solid red;
+    
+  }
+  
+}
+.showingdata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.datum {
+  width: 80%; 
+  margin-left: 150px;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  padding: 6px;
+}
+.text {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+textarea {
+  color: whitesmoke;
+
+  background-image: url('../public/textarea.jpg');
+  background-size: cover;
+  width: 40%;
+  height: 200px; 
+  overflow: hidden;
+  border: 2px solid black;
+  opacity: 0.8;
+   
+}
