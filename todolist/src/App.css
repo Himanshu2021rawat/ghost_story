@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Recursive:wght@300&family=Ysabeau+Office:wght@1&family=Ysabeau+SC:wght@1&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body{
+font-family: 'Ysabeau SC', sans-serif;
+background-image: url('../public/airballon.jpg');
+background-size: cover;
+
+}
+
+body:hover{
+  animation: bodyanime 10s ease-in-out 0.4s infinite alternate-reverse;
+}
+
+@keyframes bodyanime {
+  0%{
+      background-image:url('../public/cloud.jpg') ;
+      background-size: cover;
+  }
+  100%{
+    background-image: url('../public/airballon.jpg');
+    background-size: cover;
+  }
+  
+}
+
+
+.App {
+  text-align: center;
+
+}
+.heading{
+  
+  border: 1px solid black;
+  /* background-image: url('../public/abstract.jpg'); */
+  background-size: cover;
+  color: white;
+  animation: headanime 1s ease-in-out 1s infinite alternate-reverse ;
+  height: 60px;
+
+}
+
+@keyframes headanime {
+
+  0%{
+    transform: rotateX(33deg);
+  }
+  100%{
+    transform: rotateX(-33deg);
+    box-shadow: skyblue 0px 0px 0px 3px, skyblue 0px 0px 0px 6px, skyblue 0px 0px 0px 9px, skyblue 0px 0px 0px 12px, skyblue 0px 0px 0px 15px;    
+  }
+  
+}
+.navigation{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-weight: 900;
+
+}
+
+.navigation nav ul li{
+
+display: inline-block;
+padding: 12px;
+margin-left: 250px;
+cursor: pointer;
+
+} 
+
+.dataFields{
+
+  margin-top: 50px;
+  width: 100%;
+  
+
+}
+
+.headdata{
+  margin-top: 50px;
+  width: 80%;
+}
+
+.headdata h3{
+  display: inline-block;
+  margin-left: 300px;
+}
+
+
+.showdataContainer{
+
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.showdata{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 220px;
+  color: white;
+
+}
+
+.showdata h3{
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 10px;
+  
+}
